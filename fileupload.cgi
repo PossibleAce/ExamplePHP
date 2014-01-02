@@ -64,8 +64,6 @@ close FILE;
 #clean up metadata for office files
 if(($ext eq ".docx") || $ext eq ".doc") {
     
-    
-    
 #clean up metadata for all other files
 } else {
     system("exiftool -overwrite_original -all:all= $file2$ext");
