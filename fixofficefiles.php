@@ -1,16 +1,16 @@
 <?php
 
 /*
-* extract xml documents of $file into temp location
-* using xpath to crawl through the xml remove metadata
-*
-*
+* FixOfficeFiles Class: Removes Metadata from MS Office File's
+*  by extracting xml documents of $file from file system into
+*  a temporary location
 */
 class FixOfficeFiles
 {
     protected $files = array();
     protected $destination = dirname(__FILE__) . '/temp';
     protected $source = dirname(__FILE__) . '/files';
+    
     /*
     * Constructor, automaticall called when class is instantiated
     * if array of files is passed, will add files to be cleaned
@@ -71,7 +71,6 @@ class FixOfficeFiles
 
     public function clean($file)
     {   /* Todo Use xpath to crawl through and remove metadata */
-         
     }
 
     public function createfilelist()
